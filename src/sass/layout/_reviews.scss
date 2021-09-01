@@ -1,0 +1,36 @@
+.reviews__dots {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews__dots li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.reviews__dots  li.slick-active button::before{
+    border-radius: 0%;
+    background-color: transparent;
+    background-image: url("../images/active-dot.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.reviews__dots button {
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.reviews__dots button::before {
+    display: block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
